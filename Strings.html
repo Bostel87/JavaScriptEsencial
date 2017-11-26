@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Strings</title>
+  </head>
+  <body>
+    <h1>Strings</h1>
+    <p id="s1"></p>
+    <p id="s2"></p>
+    <p id="s3"></p>
+    <p id="s4"></p>
+
+    <h1>Strings Metodos</h1>
+    <p id="s5"></p>
+    <p id="s6"></p>
+    <p id="s7"></p>
+    <p id="s8"></p>
+    <p id="s9"></p>
+    <p id="s10"></p>
+    <p id="s11"></p>
+    <p id="s12"></p>
+    <p id="s13"></p>
+
+  </body>
+
+  <script>
+    //definicion de Strings
+    var saludo1 = "Saludo con comillas dobles";
+    var saludo2 = 'Saludo con comillas simples!!';
+
+    var tamaniostring = saludo2.length;
+
+    var objString = new String("Objeto string");
+
+    document.getElementById("s1").innerHTML = saludo1;
+    document.getElementById("s2").innerHTML = saludo2;
+    document.getElementById("s3").innerHTML = tamaniostring;
+    document.getElementById("s4").innerHTML = objString;
+
+    //Metodos Strings
+    var string1 = "Esta es";
+    var string2 = " una cadena de";
+    var string3 = " texto concatenado!";
+    var stringconcat = string1.concat(string2,string3); // Metodo concat permite concatenar strings
+  document.getElementById("s5").innerHTML = stringconcat;
+
+  var mensaje1 = "Programando en .NET";
+  document.getElementById("s6").innerHTML = mensaje1;
+
+  var mensaje2 = mensaje1.replace(" .NET", " Java Script");//Este metodo permite reemplazar una parte de la cadena de texto
+
+  document.getElementById("s7").innerHTML = mensaje2;
+
+  var mensaje3 = "Luchar, Reir y Vivir; esa es la clave";
+  document.getElementById("s8").innerHTML = mensaje3;
+
+  document.getElementById("s9").innerHTML = mensaje3.substring(8,29);// este metodo permite extraer una subcadena
+
+  var mensaje4 = "EL IGNORANTE AFIRMA EL SABIO DUDA Y REFLECCIONA";
+  document.getElementById("s10").innerHTML = mensaje4;
+  document.getElementById("s11").innerHTML = mensaje4.toLowerCase();// letras en minusculas
+
+  var mensaje5 = "La verdadera cida tiene lugar en nuestro interior";
+  document.getElementById("s12").innerHTML = mensaje5;
+  document.getElementById("s12").innerHTML = mensaje5.toUpperCase();//Letras Mayusculas
+
+  </script>
+</html>
