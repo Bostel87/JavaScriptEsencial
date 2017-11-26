@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad4</title>
+  </head>
+  <body>
+    <h1>Actividad 4</h1>
+    <h1>vehiculo 1</h1>
+    <p id="p1"></p>
+    <p id="ma1"></p>
+    <p id="mo1"></p>
+
+    <h1>vehiculo 2</h1>
+    <p id="p2"></p>
+    <p id="ma2"></p>
+    <p id="mo2"></p>
+
+    <h1>vehiculo 3</h1>
+    <p id="p3"></p>
+    <p id="ma3"></p>
+    <p id="mo3"></p>
+  </body>
+  <script>
+
+  var vehiculo1 = {
+    placa: "IE033C",
+    marca: "Mercedes Benz",
+    modelo: 5300
+  }
+  document.getElementById("p1").innerHTML = vehiculo1.placa;
+  document.getElementById("ma1").innerHTML = vehiculo1.marca;
+  document.getElementById("mo1").innerHTML = vehiculo1.modelo;
+
+  var vehiculo2 = new Object();
+  vehiculo2.placa = "IO889M";
+  vehiculo2.marca = "BMW";
+  vehiculo2.modelo = 2500;
+
+  document.getElementById("p2").innerHTML = vehiculo2.placa;
+  document.getElementById("ma2").innerHTML = vehiculo2.marca;
+  document.getElementById("mo2").innerHTML = vehiculo2.modelo;
+  </script>
+</html>
