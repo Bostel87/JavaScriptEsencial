@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>For In</title>
+  </head>
+  <body>
+    <h1>For In</h1>
+    <p id="salida"></p>
+
+    <button onclick="mostrar_producto()">Mostrar Producto</button>
+  </body>
+  <script>
+
+  function mostrar_producto(){
+    var texto = "Producto <br>";
+
+    var producto = {
+      codigo: "001",
+      nombre: "Camiseta",
+      precio: 200
+    };
+    var x ;
+    for(x in producto){
+      texto+=producto[x]+"<br>";
+    }
+    document.getElementById("salida").innerHTML = texto;
+  }
+
+  </script>
+</html>
