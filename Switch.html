@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Switch</title>
+  </head>
+  <body>
+    <h1>Switch</h1>
+    <p id="mes"></p>
+
+    <button  onclick="verificarMes()">Verificar Mes</button>
+  </body>
+  <script>
+
+  var opc = 10;
+
+  function verificarMes(){
+    switch (opc) {
+      case  1:
+        document.getElementById("mes").innerHTML = "El Mes es Enero";
+        break;
+        case 2:
+          document.getElementById("mes").innerHTML = "El mes es Febrero";
+          break;
+        case 3:
+          document.getElementById("mes").innerHTML = "El mes es Marzo";
+          break;
+        case 10:
+          document.getElementById("mes").innerHTML = "El mes es Octubre";
+          break;
+      default:
+
+    }
+  }
+
+  </script>
+</html>

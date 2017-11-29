@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad 2</title>
+  </head>
+  <body>
+    <h1>Actividad 2</h1>
+    <p id="a"></p>
+
+    <button onclick="verificarNumero()">Verificar Numero</button>
+  </body>
+  <script>
+    var num = 33;
+
+    function verificarNumero(){
+      if(num%2 == 0){
+        console.log(num%2);
+        document.getElementById("a").innerHTML = "El numero es Par";
+      }else{
+        document.getElementById("a").innerHTML = "El numero es Impar";
+      }
+    }
+  </script>
+</html>
