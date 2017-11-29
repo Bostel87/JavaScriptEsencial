@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad 4</title>
+  </head>
+  <body>
+    <h1>Actividad 4</h1>
+    <p id="salida"></p>
+    <button onclick="mostrar()">Mostrar</button>
+  </body>
+  <script>
+
+  function mostrar(){
+    var equipos = ["Milan","Liverpool","Barcelona","Chelsea","Bayer"];
+    var txt="";
+    var cont=0;
+
+    do{
+      txt+=equipos[cont]+"<br>";
+      cont++;
+    }while(cont <= equipos.length-1)
+    document.getElementById("salida").innerHTML = txt;
+  }
+
+  </script>
+</html>

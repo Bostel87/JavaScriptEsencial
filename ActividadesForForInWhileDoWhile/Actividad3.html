@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad 3</title>
+  </head>
+  <body>
+    <h1>Actividad 3</h1>
+    <p id="salida"></p>
+    <button onclick="impares()">Impares</button>
+  </body>
+  <script>
+  function impares(){
+    var a = 0;
+    var txt="";
+
+    while(a<=100){
+      if(a%2 == 1)
+      txt+=a+"<br>";
+      a++;
+    }
+    document.getElementById("salida").innerHTML = txt;
+  }
+
+  </script>
+</html>
