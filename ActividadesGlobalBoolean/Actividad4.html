@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad 4</title>
+  </head>
+  <body>
+    <h1>Actividad 4</h1>
+    <p id="a1"></p>
+    <p id="a2"></p>
+    <p id="a3"></p>
+    <p id="a4"></p>
+    <p id="a5"></p>
+    <p id="a6"></p>
+    <p id="a7"></p>
+    <p id="a8"></p>
+    <p id="a9"></p>
+    <p id="a10"></p>
+  </body>
+  <script>
+    var uri1 = "http://nextuniversity.com/es/";
+    var uriEnc1 = encodeURIComponent(uri1);
+    var uriDec1 = decodeURIComponent(uriEnc1);
+
+    document.getElementById("a1").innerHTML = uriEnc1;
+    document.getElementById("a2").innerHTML = uriDec1;
+
+
+    var uri2 = "http://www.w3.org/";
+    var uriEnc2 = encodeURIComponent(uri2);
+    var uriDec2 = decodeURIComponent(uriEnc2);
+
+    document.getElementById("a3").innerHTML = uriEnc2;
+    document.getElementById("a4").innerHTML = uriDec2;
+
+    var uri3 = "https://www.facebook.com/";
+    var uriEnc3 = encodeURIComponent(uri3);
+    var uriDec3 = decodeURIComponent(uriEnc3);
+
+    document.getElementById("a5").innerHTML = uriEnc3;
+    document.getElementById("a6").innerHTML = uriDec3;
+
+  </script>
+</html>
