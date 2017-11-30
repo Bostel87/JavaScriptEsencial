@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad 3</title>
+  </head>
+  <body>
+    <p>Actividad 3</p>
+    <p id="salida"></p>
+    <button onclick="miFuncion()">Mi Funcion</button>
+  </body>
+  <script>
+
+  try{
+    var estudiante = null;
+    alert(estudiante.nombre);
+  }catch(error){
+    alert("Existe un error "+error.messagge);
+  }finally {
+    document.getElementById("salida").innerHTML = "Estamos en la sentencia FINALLY!!";
+  }
+
+  </script>
+</html>
