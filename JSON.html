@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JSON</title>
+  </head>
+  <body>
+    <h1>JSON</h1>
+    <p id="empresas"></p>
+  </body>
+  <script type="text/javascript">
+    var jsonText = '{"empresas":['+
+    '{"ruc": "3746374", "nombre": "TCC", "telefono": "0959437788", "email": "bofef@gmail.com"},'+
+    '{"ruc": "6574534", "nombre": "Movistar", "telefono": "095957788", "email": "bdfgef@gmail.com"},'+
+    '{"ruc": "3465465", "nombre": "Nokia", "telefono": "0956437788", "email": "bofsfr@gmail.com"},'+
+    '{"ruc": "6786789", "nombre": "Epson", "telefono": "0952347788", "email": "bowewe@gmail.com"},'+
+    '{"ruc": "0987656", "nombre": "Red Bull", "telefono": "0959469088", "email": "refef@gmail.com"},'+
+    '{"ruc": "5466567", "nombre": "Apple", "telefono": "0959423288", "email": "btyuf@gmail.com"},'+
+    '{"ruc": "7565334", "nombre": "Microsft", "telefono": "09434537788", "email": "rrfef@gmail.com"},'+
+    '{"ruc": "9890897", "nombre": "Xerox", "telefono": "0959408788", "email": "bonhnf@gmail.com"},'+
+    '{"ruc": "5473546", "nombre": "BMW", "telefono": "0959097788", "email": "bofweff@gmail.com"},'+
+    '{"ruc": "9274659", "nombre": "Mercedes Benz", "telefono": "0959436788", "email": "bofeff@gmail.com"}'+']}';
+
+    var jsonObj = JSON.parse(jsonText);
+
+    function leerJSON (json){
+      var out = "--------Empresas--------<br>";
+      var i;
+      for (var i = 0; i < json.empresas.length; i++) {
+        out+="ruc: "+json.empresas[i].Ruc+" - "+"Nombre: "+json.empresas[i].nombre+" - "+
+        "Telefono: "+json.empresas[i].telefono+" - "+"Email: "+json.empresas[i].email+"<br>";
+      }
+      document.getElementById("empresas").innerHTML = out;
+    }
+    leerJSON(jsonObj);
+  </script>
+</html>
