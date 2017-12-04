@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- <p id="a1"></p> -->
+  <h1>Actividad 2</h1>
+    <button onclick="mostrarPersona()">Mostrar Persona</button>
+    <button onclick="mostrarMayor()">Mostrar Edad Mayor</button>
+  </body>
+  <script>
+  var persona = [
+  {
+  "edad": 18,
+  "nombre": "Luis Perez"
+  },{
+  "edad":20,
+  "nombre": "Javier Zambrano"
+  },{
+  "edad":13,
+  "nombre":"Marcos Roman"
+  },{
+  "edad":27,
+  "nombre":"Andres Badillo"
+  },{
+  "edad":30,
+  "nombre":"Cristian Torres"
+  },{
+  "edad":12,
+  "nombre":"Pepe Tola"
+  },{
+  "edad":50,
+  "nombre":"Leonardo Aviles"
+  },{
+  "edad":23,
+  "nombre":"Andres Zurita"
+  },{
+  "edad":29,
+  "nombre":"Daniel Dziouba"
+  },{
+  "edad":10,
+  "nombre":"Luis Martin"
+  }
+  ]
+
+  function Mostrar(json){
+
+    for (var i = 0; i < json.length; i++) {
+      alert("Nombre: "+json[i].nombre+" - "+"Edad: "+json[i].edad);
+    }
+  }
+
+function mostrarPersona (argument){
+  Mostrar(persona);
+}
+
+function Mayor(json){
+  for (var i = 0; i < json.length; i++) {
+    if (json[i].edad >=18){
+      alert("Nombre: "+json[i].nombre+" - "+"Edad: "+json[i].edad);
+    }
+  }
+}
+
+function mostrarMayor(argument){
+  Mayor(persona);
+}
+
+  </script>
+</html>

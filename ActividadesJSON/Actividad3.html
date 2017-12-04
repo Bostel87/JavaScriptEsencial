@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Actividad 3</h1>
+      <button onclick="mostrarVentas()">Mostrar Ventas</button>
+      <button onclick="mostrarTotalVentas()">Mostrar Total Ventas</button>
+  </body>
+  <script>
+  var ventas = [
+  {
+  "valor": 20,
+  "codigo": "001"
+  },{
+  "valor":100,
+  "codigo": "002"
+  },{
+  "valor":90,
+  "codigo":"003"
+  },{
+  "valor":30,
+  "codigo":"004"
+  },{
+  "valor":30,
+  "codigo":"005"
+  },{
+  "valor":30,
+  "codigo":"006"
+  },{
+  "valor":150,
+  "codigo":"007"
+  },{
+  "valor":150,
+  "codigo":"008"
+  },{
+  "valor":160,
+  "codigo":"009"
+  },{
+  "valor":10,
+  "codigo":"010"
+  }
+  ]
+
+  function Mostrar(json){
+    for (var i = 0; i < json.length; i++) {
+      alert("Codigo: "+json[i].codigo+" - "+"Valor: "+json[i].valor);
+    }
+  }
+
+  function mostrarVentas(){
+    Mostrar(ventas);
+  }
+
+  function Venta(json){
+    var sum = 0;
+    for (var i = 0; i < json.length; i++) {
+      sum += json[i].valor;
+
+    }
+    alert("La Suma total es: "+sum);
+  }
+
+  function mostrarTotalVentas(){
+    Venta(ventas);
+  }
+
+  </script>
+</html>
